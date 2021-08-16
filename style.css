@@ -1,0 +1,128 @@
+#ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    margin: 400px;
+    animation-name: bouncingball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#ball p {
+    text-align: center;
+}
+@keyframes bouncingball {
+    0% {
+
+    }
+    20% {
+        background-color: salmon;
+    }
+    40% {
+        background-color: skyblue;
+    }
+    70% {
+        background-color: slateblue;
+    }
+    100% {
+        background-color: plum;
+    }
+} */
+ #in {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: green;
+    top: 30px;
+    left: 30px;
+} 
+#inner {
+    border-radius: 50%;
+    height: 96px;
+    width: 101px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+#outside {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: purple;
+    animation-name: outside;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes outside {
+    0% {
+
+    }
+    25% {
+        transform: rotate(90deg);
+        background-color: green;
+    }
+    50% {
+        transform: rotate(180deg);
+        background-color: greenyellow;
+    }
+    75% {
+        transform: rotate(270deg);
+        background-color: khaki;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: lightcoral;
+    }
+}
+#clock {
+    border-radius: 50%;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(187, 125, 125);
+    left: 50%;
+    top: 50%;
+}
+    #hour {
+        position: absolute;
+        height: 147px;
+        width: 5px;
+        background-color: black;
+        left: 50%;
+        top: 15%;
+        animation-name: hours;
+        animation-duration: 15s;
+        animation-iteration-count: 2;
+        transform-origin: bottom;
+}
+@keyframes hours {
+    from {
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+#min {
+    position: absolute;
+    height: 110px;
+    width: 5px;
+    background-color: black;
+    left: 195px;
+    top: 98px;
+    animation-name: minutes;
+    /* animation-duration: 20s; */
+    animation-iteration-count: 2;
+    transform-origin: bottom;
+    animation-delay: 15s;
+}
+@keyframes minutes {
+    from {
+
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
